@@ -1,0 +1,13 @@
+#blurring
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.image as mp
+img=plt.imread('/content/drive/My Drive/image10.jpg')
+plt.imshow(img)
+plt.show()
+img2 = mp.imread('/content/drive/My Drive/image10.jpg') #converted img to array to png
+blu = img2[:,:,0]
+imgplot=plt.imshow(blu)
+plt.colorbar()
+plt.show()
